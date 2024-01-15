@@ -2,7 +2,7 @@ FROM alpine:3.19
 
 WORKDIR /app
 
-RUN apk add --no-cache curl
+RUN apk add --no-cache docker curl
 
 # Latest releases available at https://github.com/aptible/supercronic/releases
 ENV SUPERCRONIC_URL=https://github.com/aptible/supercronic/releases/download/v0.2.29/supercronic-linux-amd64 \
